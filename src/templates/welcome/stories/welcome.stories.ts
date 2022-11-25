@@ -1,4 +1,4 @@
-import { create } from "../../create";
+import { create } from "../../../create";
 import template from "../welcome.email.html";
 
 export default {

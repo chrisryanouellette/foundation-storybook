@@ -1,12 +1,21 @@
 const path = require("path");
 
+const partialsDir = path.resolve(__dirname, "../src/partials/");
 const emailLoaders = {
   test: /\.email\.html$/,
   use: [
     {
       loader: "handlebars-loader",
       options: {
-        rootRelative: path.resolve(__dirname, "../src") + "/",
+        partialDirs: [partialsDir],
+        partialResolver: function (partial, cb) {
+          /**
+           * The gulp loader internally strips the .html extension
+           * so we manually add it back here so the webpack loader can
+           * resolve the file.
+           */
+          cb(null, path.resolve(partialsDir, partial + ".html"));
+        },
       },
     },
     {
