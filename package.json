@@ -19,6 +19,7 @@
     "babel-loader": "^8.3.0",
     "gulp": "^4.0.2",
     "gulp-compile-handlebars": "^0.6.1",
+    "gulp-htmlmin": "^5.0.1",
     "gulp-inline-css": "^4.0.0",
     "gulp-wrapper": "^1.0.0",
     "handlebars": "^4.7.7",

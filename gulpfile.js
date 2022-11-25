@@ -3,7 +3,9 @@ const gulp = require("gulp");
 const inky = require("inky");
 const inlineCss = require("gulp-inline-css");
 const wrapper = require("gulp-wrapper");
+const htmlmin = require("gulp-htmlmin");
 const handlebars = require("gulp-compile-handlebars");
+const { header, footer } = require("./src/wrappers");
 
 const input = path.resolve(__dirname, "./src/templates/");
 const partials = path.resolve(__dirname, "./src/partials");
@@ -16,7 +18,8 @@ gulp.task("default", function () {
       /** Apply the reset style sheet */
       .pipe(
         wrapper({
-          header: '<link rel="stylesheet" href="/css/foundation-emails.css" />',
+          header,
+          footer,
         })
       )
       /** Build handlebars partials */
@@ -46,6 +49,8 @@ gulp.task("default", function () {
           url: `file://${assets}/`,
         })
       )
+      /** Minify the html to reduce file size */
+      .pipe(htmlmin({ collapseWhitespace: true }))
       .pipe(gulp.dest("build"))
   );
 });
