@@ -4,6 +4,8 @@ This repo is a accomplishes a way to preview [Foundation Emails](https://get.fou
 
 Like the standard foundation email project, you can use the handlebars syntax, provided by [Handlebars.js](https://handlebarsjs.com/) to insert dynamic data into the templates as well as inject partials and run expressions.
 
+Check out an example [here](https://foundation-storybook.web.app/)!
+
 ## Getting Started
 
 1. Clone the project.

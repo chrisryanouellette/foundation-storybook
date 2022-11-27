@@ -35,6 +35,7 @@
   "dependencies": {},
   "scripts": {
     "build": "gulp",
+    "deploy": "firebase deploy --only hosting",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "prettier": "prettier --write ."
