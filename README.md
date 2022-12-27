@@ -17,4 +17,4 @@ Check out an example [here](https://foundation-storybook.web.app/)!
 
 1. Ensure all the dependencies are installed.
 1. Run `yarn build` and the files will be built to the `/build` directory.
-   - When build, all expressions will remain in the template so they can be replaced later on the server by only running the template through handlebars. All partials will be added and the html will be converted via Inky.
+   - When built, all expressions will remain in the template so they can be replaced later on the server by only running the template through handlebars. All partials will be added and the html will be converted via Inky.

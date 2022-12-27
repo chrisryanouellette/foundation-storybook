@@ -1,0 +1,32 @@
+import { Meta } from "@storybook/addon-docs";
+
+<Meta title="Welcome" />
+
+# Welcome to Foundation Emails in Storybook
+
+This project was created to allow a developer and design teams to use Storybook as a tool for creating responsive emails. [Foundation Emails](https://get.foundation/emails.html) does come with it's own development server but it does not offer all the convenient features and add ons that Storybook offers such as the accessibility plugin and responsive screen sizes.
+
+## Developing
+
+The following section will enable you as a developer to get this project running locally and explain all the folders used by Foundation.
+
+### Installation ( Quick Guide )
+
+1. Clone the project from github with command `git clone https://github.com/chrisryanouellette/foundation-storybook.git`.
+1. Open the root of the project in your terminal of choice.
+1. Run `yarn` to install all the dependencies.
+1. Run `yarn storybook` to begin storybook and have a the window opened in your browser.
+
+### Building Your Emails
+
+1. Ensure all the dependencies are installed.
+1. Run `yarn build` and the files will be built to the `/build` directory.
+   - When built, all expressions will remain in the template so they can be replaced later on the server by only running the template through handlebars. All partials will be added and the html will be converted via Inky.
+
+### Project Explanation
+
+There are three folders within the `src` directory that will contain all the files that make up each email.
+
+- `assets` - All image and CSS files
+- `partials` - All code snippets, typically re-usable snippets, that will be injected into the email templates. Think a hero that would be used across many different emails.
+- `templates` - The emails that will be built and exported for use in projection.
