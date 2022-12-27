@@ -1,0 +1,118 @@
+<link rel="stylesheet" href="/css/order-confirmed/order-confirmed.css" />
+
+<container>
+  <row>
+    <p class="text-center mb-1">Some top banner content.</p>
+  </row>
+  <row>
+    <columns large="2"></columns>
+    <columns small="12" large="8">
+      <center>
+        <img src="https://via.placeholder.com/500x150" />
+      </center>
+    </columns>
+    <columns large="2"></columns>
+  </row>
+  <hr />
+  <center>
+    <menu>
+      <item href="#">Item</item>
+      <item href="#">Item</item>
+      <item href="#">Item</item>
+      <item href="#">Item</item>
+      <item href="#">Item</item>
+    </menu>
+  </center>
+  <row class="bg-zinc-700">
+    <columns small="12">
+      <spacer size="16"></spacer>
+      <p class="text-2xl text-white">Order confirmed!</p>
+      <spacer size="8"></spacer>
+      <p class="text-white">
+        Thank you for shopping with us! Your order is being processed.
+      </p>
+      <spacer size="24"></spacer>
+      <row>
+        <columns small="12" large="6">
+          <p class="text-gray-300">Ship to:</p>
+          <p class="text-white">{{recipient}}</p>
+          <p class="text-white">{{street}}</p>
+          <p class="text-white">
+            <span>{{city}}</span>, <span>{{state}}</span> <span>{{zip}}</span>
+          </p>
+          <p class="text-white">{{phone-number}}</p>
+        </columns>
+        <columns small="12" large="6">
+          <p class="text-gray-300">
+            Order Number:
+            <a href="#" class="text-green-600 underline">{{order-number}}</a>
+          </p>
+          <p class="text-gray-300">
+            Order Date: <span class="text-white">{{order-date}}</span>
+          </p>
+          <p class="text-gray-300">
+            Shipping Type: <span class="text-white">{{shipping-type}}</span>
+          </p>
+        </columns>
+      </row>
+      <spacer size="24"></spacer>
+      <div>
+        <button href="#" class="inline">My Account</button>
+        <button href="#" class="inline">Track Order</button>
+      </div>
+    </columns>
+  </row>
+  <spacer size="24"></spacer>
+  {{>item/item-header.email}} {{>item/item.email}} {{>item/item.email}}
+  {{>item/item.email}} {{>item/item.email}}
+  <row>
+    <columns small="12" large="7"></columns>
+    <columns small="12" large="5">
+      <row>
+        <columns small="6">Subtotal</columns>
+        <columns small="6">
+          <p class="text-end">$100.00</p>
+        </columns>
+      </row>
+      <hr />
+      <row>
+        <columns small="6">Shipping</columns>
+        <columns small="6">
+          <p class="text-end">$10.00</p>
+        </columns>
+      </row>
+      <hr />
+      <row>
+        <columns small="6">Tax</columns>
+        <columns small="6">
+          <p class="text-end">$14.33</p>
+        </columns>
+      </row>
+      <hr />
+      <row>
+        <columns small="6">
+          <p class="font-bold">Total <span class="text-sm">USD</span></p>
+        </columns>
+        <columns small="6">
+          <p class="font-bold text-end">$140.33</p>
+        </columns>
+      </row>
+    </columns>
+  </row>
+  <hr />
+  <row>
+    <columns small="12" large="6">
+      <p class="text-center">
+        <a>Download your Invoice</a>
+      </p>
+    </columns>
+    <columns small="12" large="6">
+      <p class="text-center">
+        <a>Download other form</a>
+      </p>
+    </columns>
+  </row>
+  <center>
+    <img src="https://via.placeholder.com/500x150" />
+  </center>
+</container>
