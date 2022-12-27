@@ -40,6 +40,7 @@ module.exports = {
         },
       },
     },
+    "../addons/build/preset.js",
   ],
   framework: "@storybook/html",
   /** Serve files from the assets folder */
