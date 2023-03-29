@@ -12,7 +12,7 @@ jobs:
       - name: Set Node.js 16.x
         uses: actions/setup-node@v3
         with:
-          node-version: "16"
+          node-version: 16.x
           cache: "yarn"
       - run: yarn && yarn build-storybook
       - name: Deploy
