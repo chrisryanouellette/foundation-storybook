@@ -1,10 +1,7 @@
 {
   "hosting": {
+    "site": "foundation-emails",
     "public": "storybook-static",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ]
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
   }
 }
